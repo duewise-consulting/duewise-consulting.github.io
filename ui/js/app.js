@@ -11,7 +11,7 @@ var APP = angular.module('APP', ['ngRoute', 'ngSanitize', 'chieffancypants.loadi
 					$scope.pageURL = 'ui/tpl/'+ $rootScope.page +'.html';
 				}]
 			});
-		
+
 		$httpProvider.defaults.headers.post['Content-Type'] = 'application/json';
 		$httpProvider.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
@@ -41,14 +41,14 @@ var APP = angular.module('APP', ['ngRoute', 'ngSanitize', 'chieffancypants.loadi
 
 
 $( document ).ready( function(){
-	// google analytics
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	// FIXME: google analytics
+	// (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	// (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	// m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	// })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-	ga('create', 'UA-47160625-1', 'vibhaj.com');
-	ga('send', 'pageview');
+	// ga('create', 'UA-47160625-1', 'vibhaj.com');
+	// ga('send', 'pageview');
 
 	window.addEventListener('scroll', function(e){
     var distanceY = window.pageYOffset || document.documentElement.scrollTop,
