@@ -1,0 +1,32 @@
+<div class="header">
+	<div class="caps-strip">
+		<div class="body">
+			<div class="wrap">
+				<span>vibhaj rajan</span>
+			</div>
+		</div>
+	</div>
+
+	<div class="body main-title">
+		<div class="wrap">
+			<span>{{ page }}</span>
+			<span class="pull-right">
+				<img src="ui/img/me.jpg" class="square-photo" />
+			</span>
+			<span class="clearfix"></span>
+		</div>
+	</div>
+
+	<div class="text-menu">
+		<div class="body">
+			<div class="wrap">
+				<ul class="list-inline">
+					<li ng-repeat="name in menu" ng-class="{bold:name==page}">
+						<a href="#/{{menu_urls[name]}}">{{name}}</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
